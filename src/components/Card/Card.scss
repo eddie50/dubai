@@ -1,0 +1,35 @@
+.card {
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.052);
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s ease-in-out;
+  }
+  img {
+    width: 150px;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+  }
+  .desc {
+    padding: 0.3em;
+
+    .price {
+      color: #a944c5;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .descTop {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .descBotton {
+      font-size: 12px;
+      color: #828181;
+      font-weight: 400;
+    }
+  }
+}
