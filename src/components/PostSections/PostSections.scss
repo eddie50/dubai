@@ -1,0 +1,46 @@
+.postBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  gap: 1em;
+  padding: 1em;
+  width: 100%;
+
+  a{
+    text-decoration: none;
+    color: black;
+    .nav-item {
+        -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.052);
+        width: 150px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        .nav-icon {
+          font-size: 40px;
+          color: #8e24aa;
+        }
+        p {
+          text-align: center;
+          font-size: 15px;
+          margin-top: .5em;
+        }
+        &:hover {
+          background-color: rgb(205, 204, 204);
+          transition: 0.3s ease-in-out;
+        }
+        transition: 0.3s ease-in-out;
+      }
+  }
+
+}
+@media only screen and (max-width: 566px){
+
+}

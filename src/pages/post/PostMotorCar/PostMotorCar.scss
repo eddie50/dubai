@@ -1,0 +1,45 @@
+.postMotorCarPage {
+  h1 {
+    text-align: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 0.3em;
+    margin-bottom: 1em;
+    span {
+      color: #8e24aa;
+    }
+  }
+  .container {
+    width: 550px;
+    margin: auto;
+    form {
+      .inputsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        button {
+          margin-bottom: 2em;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}
+@media only screen and (max-width: 566px) {
+  .postMotorCarPage {
+    .container {
+      width: 90%;
+      form {
+        .inputsContainer {
+          button {
+            margin-bottom: 6em;
+          }
+        }
+      }
+    }
+  }
+}

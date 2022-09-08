@@ -12,8 +12,6 @@ const Home = () => {
             <CardSlider title='Popular in Residental for Rent'/>
             <CardSlider title='Popular in Used Cars for Sale'/>
         </div>
-
-        
     </div>
   )
 }

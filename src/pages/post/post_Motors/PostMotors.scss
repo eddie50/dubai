@@ -1,0 +1,79 @@
+.postMotorPage {
+  h1 {
+    text-align: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 0.3em;
+    margin-bottom: 1em;
+    span {
+      color: #8e24aa;
+    }
+  }
+  .container {
+    width: 550px;
+    margin: auto;
+    h3 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    p {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    ul {
+      .top-link {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.1em;
+        align-items: center;
+        margin-bottom: 1em;
+        a {
+          padding: 0;
+          text-decoration: none;
+          color: rgb(65, 120, 222);
+          margin-bottom: 0.2em;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: blue;
+            text-decoration: underline;
+            transition: 0.2s ease-in-out;
+          }
+        }
+        .top-link-icon {
+          font-size: 10px;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 600;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+
+        li {
+          padding: 1em;
+          padding-bottom: 0.7em;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgb(200, 200, 200);
+          .arrowIcon {
+            font-size: 12px;
+          }
+          font-weight: 500;
+          &:hover {
+            background-color: rgb(218, 217, 217);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 566px) {
+  .postMotorPage {
+    .container {
+      width: 95%;
+    }
+  }
+}

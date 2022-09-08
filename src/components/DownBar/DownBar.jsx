@@ -1,35 +1,40 @@
-import HomeIcon from '@mui/icons-material/Home';
-import SearchIcon from '@mui/icons-material/Search';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import CommentIcon from '@mui/icons-material/Comment';
-import Person2Icon from '@mui/icons-material/Person2';
-import './DownBar.scss'
+import HomeIcon from "@mui/icons-material/Home";
+import SearchIcon from "@mui/icons-material/Search";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import CommentIcon from "@mui/icons-material/Comment";
+import Person2Icon from "@mui/icons-material/Person2";
+import { Link } from "react-router-dom";
+import "./DownBar.scss";
 
 const DownBar = () => {
   return (
     <div className="DownBar">
-        <div className="downItem">
-            <HomeIcon className='downIcon' />
-            <p>Home</p>
-        </div>
-        <div className="downItem">
-            <SearchIcon className='downIcon' />
-            <p>Search</p>
-        </div>
+      <div className="downItem">
+        <HomeIcon className="downIcon" />
+        <p>Home</p>
+      </div>
+      <div className="downItem">
+        <SearchIcon className="downIcon" />
+        <p>Search</p>
+      </div>
+      <Link to='/post_ad'>
         <div className="downItem middle">
-            <AddCircleIcon className='downIcon' />
-            <p>Post an Ad</p>
-        </div>
-        <div className="downItem">
-            <CommentIcon className='downIcon' />
-            <p>Messages</p>
-        </div>
-        <div className="downItem">
-            <Person2Icon className='downIcon' />
-            <p>Profile</p>
-        </div>
-    </div>
-  )
-}
+          <AddCircleIcon className="downIcon" />
 
-export default DownBar
+          <p>Post an Ad</p>
+        </div>
+      </Link>
+
+      <div className="downItem">
+        <CommentIcon className="downIcon" />
+        <p>Messages</p>
+      </div>
+      <div className="downItem">
+        <Person2Icon className="downIcon" />
+        <p>Profile</p>
+      </div>
+    </div>
+  );
+};
+
+export default DownBar;

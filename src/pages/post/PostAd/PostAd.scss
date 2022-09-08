@@ -1,0 +1,40 @@
+.postAdPage{
+    h1{
+        text-align: center;
+        border-bottom: 1px solid rgb(187, 187, 187);
+        padding: .3em;
+        margin-bottom: 1em;
+        span{
+            color: #8e24aa;
+        }
+    }
+    .container{
+        // background-color: red;
+        width: 550px;
+        margin: auto;
+        .title{
+            text-align: center;
+            h2{
+                font-weight:500;
+                // color: red;
+            }
+            p{
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 566px){
+    .postAdPage{
+
+        .container{
+            width: 80%;
+            .title{
+
+                p{
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+}
